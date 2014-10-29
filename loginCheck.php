@@ -6,29 +6,33 @@ $password = "rtbank";
 
 $conn = new mysqli($servername, $username, $password);
 
-echo '<p>Mysqli successfully running</p>';
+echo '<p>MySQLi successfully running</p>';
+
 // Check connection
 if ($conn->connection_error)
 {
 	die("Connection failed: " . $conn->connect_error);
 }
-
 echo "<p>Connected successfully</p>";
 
 
 
+$sql = "SELECT accountName, password FROM admin";
+$result = $conn->query($sql);
+
+if($result->num_rows > 0)
+{
+	while($row = $result->fetch_assoc())
+	{
+		echo "<br> accountName: " . $row["accountName"] . "- password: " . $row["password"];
+	}
+}
+else
+{
+	echo $result->num_rows . "results";
+}
 
 
-  mysql_select_db('loginAccounts', $link);
-  $pass = 'SELECT password FROM ' + username.value;
-     
-  if(mysql_query($pass, $link) == password.value)
-  {
-    header('Location:success.html');
-  }
-  else
-  {
-    echo 'Invalid username or password';
-  }
+$conn->close();
 ?>
 
