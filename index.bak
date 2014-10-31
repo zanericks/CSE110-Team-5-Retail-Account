@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>
+      Login|RT Bank
+    </title>
+  </head>
+  <body>
+    <h3>
+      RT Bank
+    </h3>
+    <form name="login">
+      Username:<input type="text" name="username"/>
+      <p>Password:<input type="password" name="password"/></p>
+      <input type="button" onclick="check(this.form)" value="login"/>
+    </form>
+    <script language="javascript">
+    function check(form)
+    {
+      if(form.username.value == "admin" && form.password.value == "rtbank")
+      {
+        window.open('success.html','_self',false)
+      }
+      else
+      {
+        alert("Incorrect Username or Password")
+      }
+    }
+    </script>
+  </body>
+</html>
