@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>
+      Register|RT Bank
+    </title>
+  </head>
+  <body>
+    <h5>
+      Register for an RT Bank account!
+    </h5>
+    <p><font color="#FF0000">One or More Fields Where Left Empty!</font></p>
+    <form action="newAccount.php" method="get" target="_self">
+      Enter a Username between 1 and 20 Characters:
+      <p><input type="text" name="username"/></p>
+      <p>Enter a password between 1 and 30 Characters:</p>
+      <p><input type="password" name="password"/></p>
+      <p>Enter your first and last name:</p>
+      <p><input type="text" name="first"/><input type="text" name="last"/></p>
+      <p>Enter your street address:</p>
+      <p><input type="text" name="address"/></p>
+      <input type="submit" value="Submit"/>
+      <input type="button" onclick="location.href='index.html'" value="Cancel"/>
+    </form>
+  </body>
+</html>
