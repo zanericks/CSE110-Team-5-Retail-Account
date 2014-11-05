@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>
+      Register|RT Bank
+    </title>
+  </head>
+  <body>
+    <h3>
+      Register for an RT Bank account!
+    </h3>
+    <p><font color="#FF0000">Error: One or more fields were left empty or were incorrect!
+                             Please fill out the fields again.</font></p>
+    <form action="newAccount.php" method="get" target="_self">
+      <p>Account username:   <input type="text" name="username" placeholder="ex: zanericks"/></p>
+      <p>Password:   <input type="password" name="password" placeholder="Minimum 6 characters"/></p>
+      <p>Name:   <input type="text" name="first" placeholder="First Name (ex: Zane)"/>   <input type="text" name="last" placeholder="Last Name (ex: Ricks)"/></p>
+      <p>Street Address:   <input type="text" name="address1" placeholder="ex: 123 Main Street"/></p>
+      <p>Street Address Line 2:   <input type="text" name="address2" placeholder="(optional)"/></p>
+      <p>Enter your city:   <input type="text" name="city" placeholder="ex: Watertown"/></p>
+      <p>State:   <input type="text" name="state"/></p>
+      <p>Zip code:   <input type="text" name="zipcode" placeholder="ex: 02472"/></p>
+      <input type="submit" value="Submit"/>
+      <input type="button" onclick="location.href='index.html'" value="Cancel"/>
+    </form>
+  </body>
+</html>

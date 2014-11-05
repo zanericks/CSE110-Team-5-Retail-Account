@@ -1,35 +1,43 @@
 <?php
-
+//Username and password for mySQL server
 $servername = "104.131.156.252";
 $username = "root";
 $password = "rtbank";
+$db = "loginAccounts";
+$port = "3306";
 
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password, $db, $port);
 
-echo '<p>MySQLi successfully running</p>';
 
 // Check connection
-if ($conn->connection_error)
+if ($conn->connect_error)
 {
 	die("Connection failed: " . $conn->connect_error);
 }
-echo "<p>Connected successfully</p>";
 
+//Users inputed info
+$userid = $_REQUEST['username'];
+$userpass = $_REQUEST['password'];
 
-
-$sql = "SELECT accountName, password FROM admin";
+$sql = "SELECT password FROM " . $userid . " ;";
 $result = $conn->query($sql);
 
 if($result->num_rows > 0)
 {
-	while($row = $result->fetch_assoc())
+	$comp =  $result->fetch_row();
+	if($comp[0] == $userpass)
 	{
-		echo "<br> accountName: " . $row["accountName"] . "- password: " . $row["password"];
+		//header("Location:success.html");
+		header("Location: userInfo.php");
+	}
+	else
+	{
+		header("Location:invalIndex.html");
 	}
 }
 else
 {
-	echo $result->num_rows . "results";
+	header("Location:invalIndex.html");
 }
 
 
