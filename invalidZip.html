@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>
+      Register|RT Bank
+    </title>
+  </head>
+  <body>
+    <h3>
+      Register for an RT Bank account!
+    </h3>
+    <form action="newAccount.php" method="get" target="_self">
+
+      <p>Account username:   <input type="text" name="username" placeholder="ex: bobsmith"/></p>
+      <p>Password:   <input type="password" name="password" placeholder="Minimum 6 characters"/></p>
+      <p>Name:   <input type="text" name="first" placeholder="First Name (ex: Bob)"/>   <input type="text" name="last" placeholder="Last Name (ex: Smith)"/></p>
+      <p>Phone Number: <input type="text" name="phone" placeholder="ex: 4165552789"/></p>
+      <p>Email: <input type="text" name="email" placeholder="ex: bsmith@domain.com"/></p>
+      <p>Street Address:   <input type="text" name="address1" placeholder="ex: 123 Main Street"/></p>
+      <p>Street Address Line 2:   <input type="text" name="address2" placeholder="(optional)"/></p>
+      <p>City:   <input type="text" name="city" placeholder="ex: Watertown"/></p>
+      <p>State:  <!--<input type="text" name="state"/></p>-->
+
+<select name='state'>
+        <option value=''>Choose one:</option>
+        <option title=Other>Other</option>
+        <option title=Alabama>Alabama</option>
+        <option title=Alaska>Alaska</option>
+        <option title=Arizona>Arizona</option>
+        <option title=Arkansas>Arkansas</option>
+        <option title=California>California</option>
+        <option title=Colorado>Colorado</option>
+        <option title=Connecticut>Connecticut</option>
+        <option title=Delaware>Delaware</option>
+        <option title=Florida>Florida</option>
+        <option title=Georgia>Georgia</option>
+        <option title=Hawaii>Hawaii</option>
+        <option title=Idaho>Idaho</option>
+        <option title=Illinois>Illinois</option>
+        <option title=Indiana>Indiana</option>
+        <option title=Iowa>Iowa</option>
+        <option title=Kansas>Kansas</option>
+        <option title=Kentucky>Kentucky</option>
+        <option title=Louisiana>Louisiana</option>
+        <option title=Maine>Maine</option>
+        <option title=Maryland>Maryland</option>
+        <option title=Massachusetts>Massachusetts</option>
+        <option title=Michigan>Michigan</option>
+        <option title=Minnesota>Minnesota</option>
+        <option title=Mississippi>Mississippi</option>
+        <option title=Missouri>Missouri</option>
+        <option title=Montana>Montana</option>
+        <option title=Nebraska>Nebraska</option>
+        <option title=Nevada>Nevada</option>
+        <option title=NewHampshire>New Hampshire</option>
+        <option title=NewJersey>New Jersey</option>
+        <option title=NewMexico>New Mexico</option>
+        <option title=NewYork>New York</option>
+        <option title=NorthCarolina>North Carolina</option>
+        <option title=NorthDakota>North Dakota</option>
+        <option title=Ohio>Ohio</option>
+        <option title=Oklahoma>Oklahoma</option>
+        <option title=Oregon>Oregon</option>
+        <option title=Pennsylvania>Pennsylvania</option>
+        <option title=RhodeIsland>Rhode Island</option>
+        <option title=SouthCarolina>South Carolina</option>
+        <option title=SouthDakota>South Dakota</option>
+        <option title=Tennessee>Tennessee</option>
+        <option title=Texas>Texas</option>
+        <option title=Utah>Utah</option>
+        <option title=Vermont>Vermont</option>
+        <option title=Virginia>Virginia</option>
+        <option title=Washington>Washington</option>
+        <option title=WestVirginia>West Virginia</option>
+        <option title=Wisconsin>Wisconsin</option>
+        <option title=Wyoming>Wyoming</option>
+</select>
+
+      <p>Zip code:   <input type="text" name="zipcode" placeholder="ex: 02472"/><font color=#FF0000">  Invalid zip code!  Please try again.</font></p>
+      <input type="submit" value="Submit"/>
+      <input type="button" onclick="location.href='index.html'" value="Cancel"/>
+    </form>
+  </body>
+</html>
+
+
+
+

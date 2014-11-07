@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 //Username and password for mySQL server
 $servername = "104.131.156.252";
 $username = "root";

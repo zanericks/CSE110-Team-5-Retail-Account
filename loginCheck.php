@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 //Username and password for mySQL server
 $servername = "104.131.156.252";
 $username = "root";
@@ -28,7 +30,6 @@ if($result->num_rows > 0)
 	if($comp[0] == $userpass)
 	{
 		//header("Location:success.html");
-		session_start();
 		$_SESSION["username"] = "$userid";
 		$_SESSION["password"] = "$userpass";
 		header("Location: userInfo.php");
