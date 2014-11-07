@@ -28,6 +28,9 @@ if($result->num_rows > 0)
 	if($comp[0] == $userpass)
 	{
 		//header("Location:success.html");
+		session_start();
+		$_SESSION["username"] = "$userid";
+		$_SESSION["password"] = "$userpass";
 		header("Location: userInfo.php");
 	}
 	else

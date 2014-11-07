@@ -9,7 +9,7 @@ $port = "3306";
 
 $conn = new mysqli($servername, $username, $password, $db, $port);
 
-echo "HEY THERE";
+echo "HEY THERE " . $_SESSION["username"];
 
 // Check connection
 if ($conn->connect_error)
@@ -19,7 +19,5 @@ if ($conn->connect_error)
 
 $sqlquery = "Select balance from " . $userid . ";";
 
-echo "query is:  " . $sqlquery;
-echo "user id is: " . $userid;
 
 ?>
