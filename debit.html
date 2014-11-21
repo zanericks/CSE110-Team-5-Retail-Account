@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="shortcut icon" href="http://www.iconj.com/ico/c/j/cjmjbapkib.ico" type="image/x-icon" />
+    <title>
+      Debit|RT Bank
+    </title>
+  </head>
+  <body>
+    <h3>
+      Debit an account:
+    </h3>
+    <form action="debit.php" method="get" target="_self">
+    <div id="credit"><p>Please enter the amount of money to debit (withdraw):<br>
+    $<input type="number" name="amount" min=".01" step="0.01" placeholder="ex: 50" required><br>
+    Note: Just type number (ex: 50). You do not need a $ sign.</p></div><br>
+    <div id="submit"><input type="submit" value="Debit"/>  <input type="button" onclick="location.href='admin.php'" value="Cancel"/></div>
+    </form>
+  </body>
+</html>

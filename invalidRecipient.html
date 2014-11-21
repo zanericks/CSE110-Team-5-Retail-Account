@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="shortcut icon" href="http://www.iconj.com/ico/c/j/cjmjbapkib.ico" type="image/x-icon" />
+    <title>
+      Admin|RT Bank
+    </title>
+  </head>
+  <body>
+    <h3>
+      Transfer money:
+    </h3>
+
+    <form action="transferMoney.php" method="get" target="_self">
+   
+    <div id="transfer"><p>Please type the account number from which you would like to transfer:<br>
+    <input type="text" name="from" placeholder="ex: 2"/><br>
+<br>
+    <div id="invalidRecipient"><p><font color="#FF0000">This account number was not found in our
+                                                         database. Please try again.</font></p></div>
+    <div id="transfer"><p>Please type the account number of the account you would like to transfer to:<br>
+    <input type="text" name="recipient" placeholder="ex: 6"/><br>
+<br>
+    <p>Please enter the amount of money to transfer:<br>
+    <input type="text" name="amount" placeholder="ex: 50"/><br>
+    Note: Just type number (ex: 50). You do not need a $ sign.</p></div><br>
+    <div id="submit"><input type="submit" value="Transfer Amount"/>  <input type="button" onclick="location.href='success.php'" value="Cancel"/></div>
+    </form>
+  </body>
+</html>
+

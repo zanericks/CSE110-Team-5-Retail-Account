@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="shortcut icon" href="http://www.iconj.com/ico/c/j/cjmjbapkib.ico" type="image/x-icon" />
+    <title>
+      Register|RT Bank
+    </title>
+  </head>
+  <body>
+    <h3>
+      Register for an RT Bank Checkings or Savings Account!
+    </h3>
+
+    <form action="createAccount.php" method="get" target="_self">
+    <div id="accountType"><p>Please select which type of account you would like to create: </p>
+<select name="accountType" selected="checking">
+  <option value="checking">Checking</option>
+  <option value="savings">Savings</option>
+</select> </div>
+    <div id="accountName"><p>Please name your account:   <input type="text" name="accountName" placeholder="ex: My Checking Account" required></p></div>
+    <div id="submit"><input type="submit" value="Create!" style="background-color:Green; color:White; border:2px solid Green"/>
+    <input type="button" onclick="location.href='success.php'" value="Cancel" style="background-color:#FFBF00; color:White; border:2px solid #FFBF00"/></div>
+    </form>
+  </body>
+</html>

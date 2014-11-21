@@ -1,3 +1,146 @@
-passwordText {
-  height:100px;
+body {
+  /*background-color: #3399FF;*/
+  background-color: #81BEF7;
+}
+
+#rt {
+  text-align: left;
+  position: absolute;
+  font-size: 60px;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+}
+
+#username {
+  text-align: center;
+}
+
+#password {
+  text-align: center;
+}
+
+#name {
+  text-align: center;
+}
+
+#phonenumber {
+  text-align: center;
+}
+
+#email {
+  text-align: center;
+}
+
+#address1 {
+  text-align: center;
+}
+
+#address2 {
+  text-align: center;
+}
+
+#city {
+  text-align: center;
+}
+
+#state {
+  text-align: center;
+}
+
+#zipcode {
+  text-align: center;
+}
+
+#submit {
+ text-align:center;
+}
+
+#cancel {
+  text-align:center;
+}
+
+#register {
+  text-align:center;
+}
+
+#forgotpw {
+  text-align:center;
+}
+
+#invalid {
+  text-align: center;
+}
+
+#errormsg {
+  text-align: center;
+}
+
+#emptyfield {
+  text-align: center;
+}
+
+#accountType {
+  text-align: center;
+}
+
+#accountName {
+  text-align: center;
+}
+
+#multipleAttempts {
+  text-align: center;
+}
+
+#login {
+  text-align: center;
+}
+
+#UCSDlogo {
+  position: absolute;
+  /*text-align: left;*/
+}
+
+img.captcha {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#captcha {
+  text-align:center;  
+}
+
+#blocked {
+  text-align: center;
+}
+
+#credit {
+  text-align: center;
+}
+
+#insufficientFunds {
+  text-align: center;
+}
+
+#transfer {
+  text-align: center;
+}
+
+#emptyRecipient {
+  text-align: center;
+}
+
+#emptyAmount {
+  text-align: center;
+}
+
+#invalidRecipient {
+  text-align: center;
+}
+
+#warningmessage {
+  text-align: center;
 }

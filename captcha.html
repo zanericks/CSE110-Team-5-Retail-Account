@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="shortcut icon" href="http://www.iconj.com/ico/c/j/cjmjbapkib.ico" type="image/x-icon" />
+    <title>
+      Login|RT Bank
+    </title>
+  </head>
+  <body>
+    <h3>
+      Welcome to RT Bank! Please log in.
+    </h3>
+   <!-- <div id="UCSDlogo"><img src="http://vision.ucsd.edu/~cwah/assets/logoUCSD.gif" style="width:304px;height:228px"></div>-->
+    <div id="invalid"><p><font color="#FF0000">Invalid username or password! Please fill out<br> 
+                     the captcha form to log in.</font></p></div>
+    <form action="loginCheck.php" method="get" target="_self">
+      <div id="username"><p>Username:   <input type="text" name="username"/></p></div>
+      <div id="password"><p>Password:   <input type="password" name="password"/></p></div>
+<br>
+      <img class="captcha" src="http://tinyurl.com/macyv2c" style="width:200px;height:100px">
+      <div id="invalid">Please type the phrase that you see above in the text box.</div>
+      <div id="captcha"><input type="text" name="captcha"</p></div>
+<br>
+      <div id="submit"><input type="submit" value="Login"/>  <input type="button" onclick="location.href='resetPassword.html'" value="Forgot password?"/></div>
+<br><br><br>
+      <div id="register"><b>Don't have an account? Enroll to RT Bank!</b></div>
+<br>
+      <div id="register"><input type="button" onclick="location.href='register.html'" value="Register"/></div>
+    </form>
+  </body>
+</html>
+
