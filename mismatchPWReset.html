@@ -1,0 +1,24 @@
+<!-- File name: mismatchPWReset.html -->
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="shortcut icon" href="http://104.131.156.252/geisel.ico" type="image/x-icon" />
+    <title>
+      Reset Password|RT Bank
+    </title>
+  </head>
+  <body>
+    <h3>
+      Reset your password:
+    </h3>
+    <!-- prompt user to type password again -->
+    <form action="updatePassword.php" method="get" target="_self">
+    <div id="password"><font color="#FF0000">Passwords did not match. Please try again.</font></div>
+    <div id="username"><p>Please enter your new password:   <input type="password" name="password1" pattern=".{6,}" required/></p></div>
+    <div id="username"><p>Please enter your new password again:   <input type="password" name="password2" pattern=".{6,}" required/></p></div>
+
+    <div id="submit"><input type="submit" value="Reset password" style="color:White; background-color:Green; border:2px solid Green;"/>
+    <input type="button" onclick="location.href='userSettings.php'" value="Cancel" style="color:White; background-color:#FFBF00; border:2px solid #FFBF00;"/>
+    </form></div>
+  </body>
+</html>
